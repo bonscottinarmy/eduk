@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="jquery.wordrotator.css">
+    <script src="jquery.wordrotator.js"></script>   
+    <link rel="stylesheet" href="animate.css">
+</head>
+
+<body>
+<h1>Words Rotatorのデモでーす。</h1>
+ 
+<h2><span id="demo1"></span> <span id="demo2"></span> <span id="demo3"></span></h2>
+ 
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="jquery.wordrotator.js"></script>
+<script>
+$(function () {
+  $("#demo1").wordsrotator({
+    words: ['あれっ', 'ほらっ', 'じゃーん']
+  });
+  $("#demo2").wordsrotator({
+    stopOnHover: true,
+    words: ['テキスト','文字列','TEXT', 'text'],
+    animationIn: "rollIn",
+    animationOut: "rollOut"
+  });
+  $("#demo3").wordsrotator({
+    stopOnHover: true,
+    changeOnClick: true,
+    words: ['くるくる回るよ','切り替わる','スライド', 'フェードイン'],
+    animationIn: "lightSpeedIn",
+    animationOut: "lightSpeedOut"
+  });
+});
+</script>   
+</body>
+
+</html>

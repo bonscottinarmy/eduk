@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet"　type="text/css" href="/TopPage.css">
+    <link rel="stylesheet" href="jquery.wordrotator.css">
+    
+    <link rel="stylesheet" href="animate.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+
+<script src="jquery.wordrotator.js"></script>
+
+
+<div id="Nav">
+        <div class="Logo">
+            <img src="finallogo.png" alt="logo" height="80">
+        </div>
+        
+        
+        
+ <ul id="dropmenu">
+ 
+   <li><a href="#">特徴</a>
+    <ul>
+      <li><a href="#">EduKとは</a></li>
+      <li><a href="#">慶應義塾高等学校とは</a></li>
+      <li><a href="#">対象</a></li>
+    </ul>
+   </li>
+  
+   <li><a href="#">教師プロフィール一覧</a>
+    <ul>
+      <li><a href="#">小学生の方はこちら</a></li>
+      <li><a href="#">中学生の方はこちら</a></li>
+      <li><a href="#">その他の方はこちら</a></li>
+    </ul>
+   </li>
+   
+  <li><a href="#">会員ページ</a>
+    <ul>
+      <li><a href="#">ログイン</a></li>
+      <li><a href="#">Q＆A</a></li>
+    </ul>
+    
+  </li>
+ </ul>
+</div>
+ 
+  <div id="main-visual">
+  
+    <div class="EduK"><img src="finallogo.png" alt="logo"></div>
+    <div class="service">巡回型個別指導</div>
+    <div class="month">１時間</div>
+    <div class="price">500円<h1>(税込)</h1></div>
+   
+    </div>
+
+<script>
+
+    $(".EduK").fadeIn(3000)
+    
+    setTimeout(function(){
+        $(".service").fadeIn(2000)
+        
+        setTimeout(function(){
+        $(".month").fadeIn(2000)
+        
+        setTimeout(function(){
+        $(".price").fadeIn(2000)
+        
+        },2000)
+        
+        },1500)
+    
+    },2500) 
+
+
+</script>
+    
+    <div id="main-center">
+        
+        
+        <div class="description">
+            
+            <h1></h1>
+            
+            <h2>
+                
+            </h2>
+            
+            
+            <h3><span id="student"></span></h3>
+            
+            <h4><span id="teacher"></span></h4>
+            
+
+            
+        </div>
+
+       
+        <div class="teachers">
+            <h1></h1>
+            
+            
+        </div>
+    </div>
+    
+    
+    
+    <div id="notice">
+        
+    </div>
+    
+    
+    
+    <div id="profile">
+        
+    </div>
+    
+</body>
+</html>
